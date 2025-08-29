@@ -18,17 +18,6 @@ PapoAI is a web application that automatically generates academic research poste
 5. **Visual Suggestions**: AI suggests visuals for each section.
 6. **Poster Generation**: Produces a beautiful HTML poster.
 
-## Installation
-1. Clone this repository:
-   ```sh
-   git clone <your-repo-url>
-   cd PapoAI
-   ```
-2. Install dependencies:
-   ```sh
-   pip install -r requirements.txt
-   ```
-
 ## Usage
 Run the Streamlit app:
 ```sh
@@ -62,5 +51,5 @@ See `requirements.txt` for all dependencies. Key packages:
 ## License
 MIT
 
-## Authors
-Group 8, Westlake University
+## Author
+Zahara Scray
