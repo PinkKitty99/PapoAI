@@ -1,0 +1,11 @@
+openai>=1.0.0
+PyMuPDF
+streamlit
+python-dotenv
+doclayout_yolo
+huggingface_hub
+pydantic
+fitz
+torch
+pillow
+typer

@@ -1,0 +1,32 @@
+[project]
+name = "vis-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "doclayout-yolo>=0.0.3",
+    "huggingface-hub>=0.31.2",
+    "openai>=1.79.0",
+    "opencv-python-headless>=4.11.0.86",
+    "pymupdf>=1.25.5",
+    "python-dotenv>=1.1.0",
+    "streamlit>=1.45.1",
+    "typer>=0.15.4",
+]
+
+[tool.uv]
+index-url = "https://mirrors.westlake.edu.cn/pypi/simple/"
+
+[tool.uv.sources]
+torch = [
+    { index = "pytorch-cu124" },
+]
+torchvision = [
+    { index = "pytorch-cu124" },
+]
+
+[[tool.uv.index]]
+name = "pytorch-cu124"
+url = "https://download.pytorch.org/whl/cu124"
+explicit = true

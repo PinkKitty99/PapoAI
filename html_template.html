@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{title}</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      background-color: #f9f9f9;
+    }
+
+    .header,
+    .footer {
+      background-color: #F16C20;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .container {
+      display: flex;
+      max-width: 1200px;
+      margin: auto;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 20px;
+    }
+
+    .column {
+      width: 49%;
+    }
+
+    .section {
+      background: rgba(241, 108, 32, 0.1);
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 20px;
+    }
+
+    img {
+      margin-top: 10px;
+      max-width: 100%;
+      height: auto;
+    }
+
+    h2 {
+      color: #F16C20;
+      margin-top: 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <h1>{title}</h1>
+    <p>
+      <strong>{authors}</strong>
+      <br>
+      {institutions}
+    </p >
+  </div>
+
+  <div class="container">
+    <div class="column">
+      <div class="section">
+        <h2>SUMMARY</h2>
+        {summary}
+  <img src="{summary_figure}" alt="Summary Figure">
+      </div>
+
+      <div class="section">
+        <h2>CONTRIBUTIONS</h2>
+        {contributions}
+      </div>
+    </div>
+    <div class="column">
+      <div class="section">
+        <h2>METHODOLOGY</h2>
+        {methodology}
+      </div>
+      <div class="section">
+        <h2>RESULTS</h2>
+        {results}
+      </div>
+
+      <div class="section">
+        <h2>DISCUSSIONS</h2>
+        {discussions}
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
